@@ -1,6 +1,9 @@
 # vagranting-nginx
 [quickLabs] Setup nginx in VMs on your local workstation with Vagrant 
 
+
+
+
 ## Windows prerequsits 
 
 Install Vagrant (download from Vagrantup.com & simple next,next,next)
