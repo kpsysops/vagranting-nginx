@@ -14,7 +14,6 @@ Vagrant.configure("2") do |config|
             sudo firewall-cmd --permanent --zone=public --add-service=http 
             sudo firewall-cmd --permanent --zone=public --add-service=https
             sudo firewall-cmd --reload
-            sudo firewall-cmd --permanent --zone=public --add-port=8080
         SHELL
         nginx.vm.provider "virtualbox" do |vb|
             vb.cpus = "1"
