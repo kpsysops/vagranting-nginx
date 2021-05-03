@@ -6,7 +6,7 @@ Vagrant.configure("2") do |config|
         nginx.vm.hostname = "nginx.example.com"
         nginx.vm.box = "generic/centos7"
         nginx.vm.network "forwarded_port", guest: 80, host:8080, host_ip: "127.0.0.1"
-        nginx.vm.network "private_network", ip: "10.10.10.11", dns: "10.10.10.2"
+        nginx.vm.network "private_network", ip: "10.10.10.11"
         nginx.vm.provision "shell", inline: <<-SHELL
             sudo yum install epel-release -y
             sudo yum install nginx -y
@@ -14,6 +14,8 @@ Vagrant.configure("2") do |config|
             sudo firewall-cmd --permanent --zone=public --add-service=http 
             sudo firewall-cmd --permanent --zone=public --add-service=https
             sudo firewall-cmd --reload
+            sudo nmcli connection modify System\ eth1 ipv4.dns 10.10.10.2
+            
         SHELL
         nginx.vm.provider "virtualbox" do |vb|
             vb.cpus = "1"
