@@ -15,7 +15,7 @@ Vagrant.configure("2") do |config|
             sudo firewall-cmd --permanent --zone=public --add-service=https
             sudo firewall-cmd --reload
             sudo nmcli connection modify System\ eth1 ipv4.dns 10.10.10.2
-            
+            sudo nmcli connection modify System\ eth1 ipv4.dns-search example.com
         SHELL
         nginx.vm.provider "virtualbox" do |vb|
             vb.cpus = "1"
