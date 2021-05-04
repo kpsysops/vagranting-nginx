@@ -6,7 +6,8 @@
 
 ## Windows prerequsits 
 
-Install Vagrant (download from Vagrantup.com & simple next,next,next)
+1. Install Vagrant (download from https://www.vagrantup.com/ & simple next,next,next)
+2. Install Virutalbox (download from https://www.virtualbox.org/ & then next,next,next)
 
 ## Usage 
 
