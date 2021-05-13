@@ -15,7 +15,7 @@
 
    or
 ```bash
-git clone https://github.com/kpsysops/vagranting-dns.git
+git clone https://github.com/kpsysops/vagranting-nginx.git
 ```
 
 2. Change directory to directory downloaded (cloned) from this GitHub repository directory
