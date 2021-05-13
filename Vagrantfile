@@ -27,7 +27,7 @@ Vagrant.configure("2") do |config|
         SHELL
         nginx.vm.provider "virtualbox" do |vb|
             vb.cpus = "1"
-            vb.memory = "1024"
+            vb.memory = "512"
             vb.customize ["modifyvm", :id, "--groups", "/vagranting"] #If you have problems with folder exist error -> Comment out this line
             vb.name = "nginx"
         end
