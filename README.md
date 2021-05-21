@@ -1,5 +1,5 @@
 # vagranting-nginx
-[quickLabs] Setup nginx in VMs on your local workstation with Vagrant 
+[quickLabs] Setup nginx in VBOX VM on your local workstation with Vagrant 
 
 
 
